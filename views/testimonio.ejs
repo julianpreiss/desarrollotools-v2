@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Tools - Contacto</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <h1 class="navbar-brand">Desarrollo Tools</h1>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link " href="testimonio">Nuevo testimonio</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      <div class="text-center">
+      <picture>
+          <source media="(max-width: 576px)" srcset="img/portada-mobile.jpg">
+          <source media="(max-width: 768px)" srcset="img/portada-tablet.jpg">
+          <img class="img-fluid text-center" src="img/portada-web.jpg" alt="Joven con una computadora">
+      </picture>
+      </div>  
+  </header>
+
+  <section class="container my-5">
+    <form action="exito" method="POST">
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="linkedin">Perfil de Linkedin</label>
+            <input type="text" class="form-control" id="linkedin" name="linkedin" aria-describedby="emailHelp" placeholder="Ingresa la URL de tu linkedin" required>
+          </div>
+        <div class="form-group">
+            <label for="textarea">Compartinos tu testimonio</label>
+            <textarea class="form-control" id="textarea" name="msg" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+  </section>
+
+  <footer class="bg-primary py-5 d-flex justify-content-center">
+    <div class="container text-white text-center h3">
+      <p>Desarrollo Tools 2021</p>
+    </div>
+  </footer>
+</body>
+</html>
